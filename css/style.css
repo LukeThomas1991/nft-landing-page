@@ -91,6 +91,11 @@ header .container {
   padding: 1.5rem 3rem;
 }
 
+.banner-image {
+  width: 100%;
+  height: auto;
+}
+
 /* COUNTDOWN SECTION */
 
 section {
@@ -107,7 +112,7 @@ section {
 
 .countdown ul {
   display: flex;
-  gap: 2rem
+  gap: 1rem
 }
 .countdown .clock-item {
   list-style: none;
@@ -166,12 +171,13 @@ section {
 
 @media screen and (max-width: 768px) {
   .menu {
-    gap: 1rem;
+    gap: 0.8rem;
   }
   .wallet-btn {
     margin-left: 0;
     padding: 1rem;
-    max-width: 8rem;
+    max-width: 6rem;
+    font-size: 0.7rem;
   }
   .countdown h1 {
     font-size: 2rem;
