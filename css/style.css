@@ -40,20 +40,50 @@ body {
 
 /* HEADER */
 
+.logo {
+  height: 45px;
+  width: 45px;
+  margin-top: 10px;
+}
+
 header {
   box-shadow: var(--header-shadow);
 }
 
 header .container {
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
 .menu {
   display: flex;
-  gap: 2rem;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+  padding: 1em;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  gap: 2rem;
+}
+
+/* FOOTER */
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-secondary);
 }
 
 /* BUTTONS */
@@ -92,8 +122,11 @@ header .container {
 }
 
 .banner-image {
+  display: flex;
   width: 100%;
   height: auto;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 /* COUNTDOWN SECTION */
@@ -170,14 +203,14 @@ section {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {
-  .menu {
-    gap: 0.8rem;
-  }
+  /* .menu {
+    gap: 10rem;
+  } */
   .wallet-btn {
     margin-left: 0;
     padding: 1rem;
-    max-width: 6rem;
-    font-size: 0.7rem;
+    max-width: 7rem;
+    font-size: 0.8rem;
   }
   .countdown h1 {
     font-size: 2rem;

@@ -1,111 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Octopus Legends</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/x-icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/x-icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/x-icon/favicon-16x16.png">
-    <link rel="manifest" href="images/x-icon/site.webmanifest">
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="logo">
+<head>
+  <title>Octopus Legends NFTs</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="autor" content="OctopusLegendsNFT" />
+  <meta name="description" content="10000 Octopus Legends NFTs that are available on the Polygon Blockchain. The Legends can be found on OpenSea." />
+  <meta name="keywords" content="Octopus Legends, Octopus Legends NFTs, NFT, Octopus, Rare NFT"
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/x-icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/x-icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/x-icon/favicon-16x16.png">
+  <link rel="manifest" href="images/x-icon/site.webmanifest">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="menu">
+        <div>
           <a href="/">
-            <img src="images/x-icon/favicon-32x32.png" alt="logo" />
+            <img class="logo" src="images/x-icon/favicon-32x32.png" alt="logo" />
           </a>
         </div>
-        <div class="menu">
-          <a
-          href="https://facebook.com/OctopusLegends"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <button class="wallet-btn btn" id="connectWallet">
+          <span>Connect Wallet</span>
+        </button>
+      </div>
+      <div class="socials">
+        <a href="https://facebook.com/OctopusLegends" target="_blank" rel="noopener noreferrer">
           <img src="images/header/facebook.png" alt="Facebook" />
         </a>
-        <a
-        href="https://instagram.com/OctopusLegends"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="images/header/instagram.png" alt="Instagram" />
-      </a>
-          <a
-            href="https://twitter.com/OctopusLegends"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="images/header/twitter.webp" alt="Twitter" />
-          </a>
-          <a
-            href="https://opensea.io/collection/octopuslegends"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="images/header/opensea.webp" alt="Opensea" />
-          </a>
-          <button class="wallet-btn btn" id="connectWallet">
-            <span>Connect Wallet</span>
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <section class="container">
-      <img class="banner-image" src="images/banner/banner.png" alt="Banner Image">
-      <div class="owner-status"></div>
-      <div class="countdown">
-        <ul
-          id="countdown"
-          class="count-down"
-          data-date="Feb 19, 2022 10:00:00 PM UTC"
-        >
-          <li class="clock-item">
-            <span class="count-number days">20</span>
-            <p class="count-text">Days</p>
-          </li>
-
-          <li class="clock-item">
-            <span class="count-number hours">20</span>
-            <p class="count-text">Hour</p>
-          </li>
-
-          <li class="clock-item">
-            <span class="count-number minutes">20</span>
-            <p class="count-text">Min</p>
-          </li>
-
-          <li class="clock-item">
-            <span class="count-number seconds">20</span>
-            <p class="count-text">Sec</p>
-          </li>
-        </ul>
-        <h1>Octopus Legends NFT Drop Coming Soon!!</h1>
-               
-        <p>A new batch of legendary octopi will be available very soon!</p>
-        <a href="https://instagram.com/OctopusLegends" target="_blank" rel="noopener noreferrer" class="hero-btn btn"
-          ><span>Join the Community</span>
+        <a href="https://instagram.com/OctopusLegends" target="_blank" rel="noopener noreferrer">
+          <img src="images/header/instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://twitter.com/OctopusLegends" target="_blank" rel="noopener noreferrer">
+          <img src="images/header/twitter.webp" alt="Twitter" />
+        </a>
+        <a href="https://opensea.io/collection/octopuslegends" target="_blank" rel="noopener noreferrer">
+          <img src="images/header/discord.webp" alt="Opensea" />
+        </a>
+        <a href="https://opensea.io/collection/octopuslegends" target="_blank" rel="noopener noreferrer">
+          <img src="images/header/opensea.webp" alt="Opensea" />
         </a>
       </div>
-    </section>
+    </div>
+  </header>
 
-    <script src="https://cdn.jsdelivr.net/npm/@metamask/onboarding@1.0.1/dist/metamask-onboarding.bundle.js"></script>
-    <script src="js/countdown.js"></script>
-    <script src="js/app.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8R3E2L3G4T"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <section class="container">
+    <img class="banner-image" src="images/banner/octopus_legends_banner.png" alt="Banner Image">
+    <div class="owner-status"></div>
+    <div class="countdown">
+      <ul id="countdown" class="count-down" data-date="Feb 19, 2022 10:00:00 PM UTC">
+        <li class="clock-item">
+          <span class="count-number days">20</span>
+          <p class="count-text">Days</p>
+        </li>
 
-      gtag('config', 'G-8R3E2L3G4T');
-    </script>
-  </body>
+        <li class="clock-item">
+          <span class="count-number hours">20</span>
+          <p class="count-text">Hour</p>
+        </li>
+
+        <li class="clock-item">
+          <span class="count-number minutes">20</span>
+          <p class="count-text">Min</p>
+        </li>
+
+        <li class="clock-item">
+          <span class="count-number seconds">20</span>
+          <p class="count-text">Sec</p>
+        </li>
+      </ul>
+      <h1>Octopus Legends NFT Drop Coming Soon!!</h1>
+
+      <p>A new batch of legendary octopi will be available very soon!</p>
+      <a href="https://instagram.com/OctopusLegends" target="_blank" rel="noopener noreferrer"
+        class="hero-btn btn"><span>Join the Community</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+      <div class="container">
+        <div class="socials">
+          <a href="https://facebook.com/OctopusLegends" target="_blank" rel="noopener noreferrer">
+            <img src="images/header/facebook.png" alt="Facebook" />
+          </a>
+          <a href="https://instagram.com/OctopusLegends" target="_blank" rel="noopener noreferrer">
+            <img src="images/header/instagram.png" alt="Instagram" />
+          </a>
+          <a href="https://twitter.com/OctopusLegends" target="_blank" rel="noopener noreferrer">
+            <img src="images/header/twitter.webp" alt="Twitter" />
+          </a>
+          <a href="https://opensea.io/collection/octopuslegends" target="_blank" rel="noopener noreferrer">
+            <img src="images/header/discord.webp" alt="Opensea" />
+          </a>
+          <a href="https://opensea.io/collection/octopuslegends" target="_blank" rel="noopener noreferrer">
+            <img src="images/header/opensea.webp" alt="Opensea" />
+          </a>
+        </div>
+        <div class="copyright">
+          <p>Copyright © 2022</p>
+        </div>
+      </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@metamask/onboarding@1.0.1/dist/metamask-onboarding.bundle.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/app.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8R3E2L3G4T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-8R3E2L3G4T');
+  </script>
+</body>
+
 </html>
