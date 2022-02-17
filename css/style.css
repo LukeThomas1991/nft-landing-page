@@ -193,6 +193,15 @@ section {
   text-align: center;
 }
 
+/* TWITTER ANNOUNCEMENTS */
+.twitterannouncements h2 {
+  text-shadow: 2px 2px 0 var(--accent-color);
+  font-style: italic;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
 /* OWNER STYLES */
 
 .owner-status {
